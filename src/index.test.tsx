@@ -1,7 +1,7 @@
-import { ExampleComponent } from '.'
+import validate from './components/validator'
 
-describe('ExampleComponent', () => {
+describe('validate', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(validate).toBeTruthy()
   })
 })
