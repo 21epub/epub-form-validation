@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3-alpha.1](https://github.com/21epub/epub-form-validation/compare/v0.0.3-alpha.0...v0.0.3-alpha.1) (2021-01-26)
+
+
+### Bug Fixes
+
+* 🐛 fix checkbox err message ([743665a](https://github.com/21epub/epub-form-validation/commit/743665a3352492355a07ae9178b296e970fa939f))
+
 ### [0.0.3-alpha.0](https://github.com/21epub/epub-form-validation/compare/v0.0.2...v0.0.3-alpha.0) (2020-12-02)
 
 ### Bug Fixes
