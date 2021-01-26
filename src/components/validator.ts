@@ -309,13 +309,18 @@ function validate(info: Info, options?: any) {
       )
       if (checked.error) {
         const message = checked.error.details
-        let messageList
+        console.log('message', message)
+
+        let messageList = ''
 
         if (message[0].type === 'any.required') {
           messageList = `请选择${label}`
-        } else {
-          messageList = `请不要多选或少选${label}`
+        } else if (message[0].type === 'array.min') {
+          messageList = `请至少选择${message[0]?.context?.limit}项`
+        } else if (message[0].type === 'array.max') {
+          messageList = `请最多选择${message[0]?.context?.limit}项`
         }
+
         const result: Result = {
           pass: false,
           error: {

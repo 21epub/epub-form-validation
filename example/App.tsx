@@ -32,14 +32,14 @@ const rules = [
     is_unique: false,
     can_search: false,
     cid: 'm1',
-    max: null,
+    max: 3,
     defaultValue: null,
-    min: null,
+    min: 2,
     precision: 0,
     can_filter: true,
     can_sort: false,
-    widget_type: 'Radio',
-    label: '单选框',
+    widget_type: 'Checkbox',
+    label: '多选框',
     can_query: false,
     anyone_can_edit: false,
     is_random: false,
@@ -72,7 +72,7 @@ const rules = [
   }
 ]
 
-const data = { s1: undefined, m1: '' }
+const data = { s1: undefined, m1: [] }
 
 const content = {
   rules: rules,
