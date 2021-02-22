@@ -39,13 +39,14 @@ interface Config {
 
 export interface Field {
   cid: string
-  field_type: FieldType | null
   label: string
+  is_required: boolean
+  read_only: boolean
+  field_type?: FieldType | null
   widget_type: string
-  config: Config
+  config?: Config
   defaultValue?: string | boolean | string[] | number[]
   is_unique?: boolean
-  is_required: boolean
   is_random?: boolean
   min?: number | null
   max?: number | null
@@ -54,7 +55,6 @@ export interface Field {
   can_sort?: boolean
   can_calc?: boolean
   can_query?: boolean
-  read_only?: boolean
   can_search?: boolean
   options?: string[] | number[]
   precision?: number

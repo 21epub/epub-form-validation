@@ -13,16 +13,31 @@ function validate(info: Info, options?: any) {
   let min
   if (options) {
     if (widget_type === 'FloatNumber') {
-      max = options.max === null ? Number.MAX_SAFE_INTEGER : options.max
-      min = options.min === null ? Number.MIN_SAFE_INTEGER : options.min
+      max =
+        options.max === null || options.max === undefined
+          ? Number.MAX_SAFE_INTEGER
+          : options.max
+      min =
+        options.min === null || options.min === undefined
+          ? Number.MIN_SAFE_INTEGER
+          : options.min
       precision =
         options.precision === 0 ? Number.MAX_SAFE_INTEGER : options.precision
     } else if (widget_type === 'Checkbox' || widget_type === 'Text') {
-      max = options.max === null ? Number.MAX_SAFE_INTEGER : options.max
-      min = options.min === null ? 0 : options.min
+      max =
+        options.max === null || options.max === undefined
+          ? Number.MAX_SAFE_INTEGER
+          : options.max
+      min = options.min === null || options.min === undefined ? 0 : options.min
     } else {
-      max = options.max === null ? Number.MAX_SAFE_INTEGER : options.max
-      min = options.min === null ? Number.MIN_SAFE_INTEGER : options.min
+      max =
+        options.max === null || options.max === undefined
+          ? Number.MAX_SAFE_INTEGER
+          : options.max
+      min =
+        options.min === null || options.min === undefined
+          ? Number.MIN_SAFE_INTEGER
+          : options.min
     }
   }
 
@@ -309,7 +324,6 @@ function validate(info: Info, options?: any) {
       )
       if (checked.error) {
         const message = checked.error.details
-        console.log('message', message)
 
         let messageList = ''
 
