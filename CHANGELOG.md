@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3-alpha.2](https://github.com/21epub/epub-form-validation/compare/v0.0.3-alpha.1...v0.0.3-alpha.2) (2021-02-22)
+
+
+### Bug Fixes
+
+* 🐛 change type and be compatible with undefined max and min ([7756573](https://github.com/21epub/epub-form-validation/commit/7756573f567efb726f50cb6c30ba77c17ac9a8e0))
+
 ### [0.0.3-alpha.1](https://github.com/21epub/epub-form-validation/compare/v0.0.3-alpha.0...v0.0.3-alpha.1) (2021-01-26)
 
 ### Bug Fixes
