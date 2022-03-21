@@ -317,6 +317,9 @@ function validate(info: Info, options?: any) {
       schema = Joi.object({
         Checkbox: Joi.array().max(max).min(min).required()
       })
+      
+      // @ts-ignore 空数组特殊处理
+      if (value?.length === 0) value = undefined
 
       const checked = schema.validate(
         { [widget_type]: value },
